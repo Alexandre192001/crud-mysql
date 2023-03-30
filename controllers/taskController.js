@@ -5,6 +5,16 @@ module.exports = class TaskControllers{
         res.render("home")
     }
 
+    static async ToggleOneTask(req,res){
+        const id = req.body.id
+
+        const task ={
+            done: req.body.done === '0' ? true : false
+        }
+        await TaskModel.update(task, {where:{id:id}})
+        res.redirect('/findAll/tasks/')
+    }
+
     static async UpdateOneTask(req,res){
         const id = req.body.id
         const task = req.body.task

@@ -2,7 +2,7 @@
     <h1>Editar tarefa - {{task.task}}</h1>
 
     <div class="container-create-task">
-        <form action="/CreateTask" method="POST">
+        <form action="/update/task/{{task.id}}" method="POST">
         <input type="hidden" name="id" value="{{task.id}}">
             <div class="form-control">
                 <label for="task">Tarefa</label>

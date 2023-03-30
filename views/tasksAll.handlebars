@@ -3,17 +3,39 @@
 
 <div class="container-task-card">
 {{#each tasksAll}}
-    <div class="card-task">
-        <div class="info-card">
-            <h1>{{this.task}}</h1>
-            <p>{{this.description}}</p>
-        </div>
-    
+            {{#if this.done}}
+             <div class="card-task done">
+                <div class="info-card ">
+                    <h1>{{this.task}}</h1>
+                    <p>{{this.description}}</p>
+                </div>
 
-        <div class="icons-control">
+                <div class="icons-control">
+                     <form action="/toggle/task/{{this.id}}" method="POST">
+                        <input type="hidden" name="id" value="{{this.id}}">
+                        <input type="hidden" name="done" value="{{this.done}}">
+                        <button type="submit"><i class="bi bi-check-lg"></i></button>
+                     </form>
+
+                <a href="/edit/task/{{this.id}}"><i class="bi bi-pen-fill"></i></a>
             
-            <form action="/toggle/task/{{this.id}}">
+                <form action="/Delete/task/{{this.id}}" method="POST">
+                    <input type="hidden" name="id" value="{{this.id}}">
+                    <button type="submit"><i class="bi bi-trash-fill"></i></button>
+                </form>
+                </div>
+            </div> 
+            {{else}}
+                 <div class="card-task">
+                <div class="info-card ">
+                    <h1>{{this.task}}</h1>
+                    <p>{{this.description}}</p>
+                </div>
+
+                <div class="icons-control">
+                     <form action="/toggle/task/{{this.id}}" method="POST">
                 <input type="hidden" name="id" value="{{this.id}}">
+                <input type="hidden" name="done" value="{{this.done}}">
                 <button type="submit"><i class="bi bi-check-lg"></i></button>
             </form>
 
@@ -26,6 +48,8 @@
             
         </div>
     </div> 
+{{/if}}
+           
 {{/each}}
 </div>
 

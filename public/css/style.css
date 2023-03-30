@@ -157,6 +157,10 @@
   min-width: 30rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+.container-taskAll-wrapper .container-task-card .card-task.done {
+  background-color: #ccc;
+  text-decoration: line-through;
+}
 .container-taskAll-wrapper .container-task-card .card-task .info-card {
   display: flex;
   flex-direction: column;
@@ -167,6 +171,16 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
+}
+.container-taskAll-wrapper .container-task-card .card-task .icons-control a {
+  text-decoration: none;
+  color: #fff;
+}
+.container-taskAll-wrapper .container-task-card .card-task .icons-control form button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
 }
 .container-taskAll-wrapper .container-task-card .card-task .icons-control i {
   cursor: pointer;
