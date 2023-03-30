@@ -1,0 +1,32 @@
+<div class="container-taskAll-wrapper">
+    <h1 class="title-taskAll">Tarefas</h1>
+
+<div class="container-task-card">
+{{#each tasksAll}}
+    <div class="card-task">
+        <div class="info-card">
+            <h1>{{this.task}}</h1>
+            <p>{{this.description}}</p>
+        </div>
+    
+
+        <div class="icons-control">
+            
+            <form action="/toggle/task/{{this.id}}">
+                <input type="hidden" name="id" value="{{this.id}}">
+                <button type="submit"><i class="bi bi-check-lg"></i></button>
+            </form>
+
+            <a href="/edit/task/{{this.id}}"><i class="bi bi-pen-fill"></i></a>
+            
+            <form action="/Delete/task/{{this.id}}" method="POST">
+                <input type="hidden" name="id" value="{{this.id}}">
+                <button type="submit"><i class="bi bi-trash-fill"></i></button>
+            </form>
+            
+        </div>
+    </div> 
+{{/each}}
+</div>
+
+</div>

@@ -4,8 +4,17 @@
   "description": "Projeto CRUD com nodejs + handlebars + express + mysql",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js",
+    "sass":"sass --watch public/scss/style.scss:public/css/style.css"
   },
   "author": "Alexandre Cavalcante",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.4",
+    "mysql2": "^3.2.0",
+    "nodemon": "^2.0.22",
+    "sass": "^1.60.0",
+    "sequelize": "^6.30.0"
+  }
 }

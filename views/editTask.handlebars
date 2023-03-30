@@ -1,0 +1,21 @@
+<div class="container-create-task-wrapper">
+    <h1>Editar tarefa - {{task.task}}</h1>
+
+    <div class="container-create-task">
+        <form action="/CreateTask" method="POST">
+        <input type="hidden" name="id" value="{{task.id}}">
+            <div class="form-control">
+                <label for="task">Tarefa</label>
+                <input type="text" autocomplete="off" name="task" value="{{task.task}}">
+            </div>
+
+            <div class="form-control">
+                <label for="description">Descrição da tarefa</label>
+                <input type="text" autocomplete="off" name="description" value="{{task.description}}">
+            </div>
+
+            <input type="submit" value="Editar Tarefa">
+        </form>
+    </div>
+
+</div>

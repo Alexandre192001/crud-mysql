@@ -1,0 +1,175 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.container-navbar-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  height: 4rem;
+  background-color: tomato;
+}
+.container-navbar-wrapper h1 {
+  margin: 2rem;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container-navbar-wrapper .navbar-links {
+  display: flex;
+  gap: 4rem;
+  margin: 2rem;
+}
+.container-navbar-wrapper .navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-home-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15rem;
+}
+.container-home-wrapper h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+}
+.container-home-wrapper h1 span {
+  color: tomato;
+}
+.container-home-wrapper .control-home {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.container-home-wrapper .control-home a {
+  background-color: tomato;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: solid 1px tomato;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.4s ease;
+}
+.container-home-wrapper .control-home a:hover {
+  background-color: #fff;
+  color: tomato;
+}
+
+.container-create-task-wrapper {
+  width: 100%;
+}
+.container-create-task-wrapper h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: tomato;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+}
+.container-create-task-wrapper .container-create-task {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-create-task-wrapper .container-create-task form {
+  margin-top: 5rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  justify-content: center;
+}
+.container-create-task-wrapper .container-create-task form .form-control {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+.container-create-task-wrapper .container-create-task form .form-control label {
+  position: absolute;
+  top: 0.5rem;
+  left: 2rem;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container-create-task-wrapper .container-create-task form .form-control input {
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: tomato;
+  border-radius: 1rem;
+  width: 100%;
+  border: none;
+  padding: 2rem;
+  color: #fff;
+}
+.container-create-task-wrapper .container-create-task form input[type=submit] {
+  border: none;
+  padding: 1rem 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: tomato;
+  color: #fff;
+  border: solid 1px tomato;
+  font-size: 1.1rem;
+  transition: all 0.4s ease;
+}
+.container-create-task-wrapper .container-create-task form input[type=submit]:hover {
+  background-color: #fff;
+  color: tomato;
+}
+
+.container-taskAll-wrapper .title-taskAll {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 2rem;
+  color: tomato;
+  font-size: 2.5rem;
+}
+.container-taskAll-wrapper .container-task-card {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.container-taskAll-wrapper .container-task-card .card-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  background-color: tomato;
+  border-radius: 0.4rem;
+  color: #fff;
+  padding: 2rem;
+  min-width: 30rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container-taskAll-wrapper .container-task-card .card-task .info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container-taskAll-wrapper .container-task-card .card-task .icons-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.container-taskAll-wrapper .container-task-card .card-task .icons-control i {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
