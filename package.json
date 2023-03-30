@@ -1,0 +1,11 @@
+{
+  "name": "crud-mysql",
+  "version": "1.0.0",
+  "description": "Projeto CRUD com nodejs + handlebars + express + mysql",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandre Cavalcante",
+  "license": "ISC"
+}
