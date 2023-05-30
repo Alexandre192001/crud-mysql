@@ -1,4 +1,4 @@
-<h1>To do list com MySQLexpress</h1>
+<h1>To do list com MySQL</h1>
 <hr>
 <h2>Linguagens Utilizadas:</h2>
 
